@@ -215,7 +215,12 @@ function render() {
   if (a === "ch") {
     document.querySelectorAll("nav a").forEach(x => x.dataset.tab === tab ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current"));
     document.getElementById("app").innerHTML = viewChapter(b);
-    if (c !== undefined) setTimeout(() => document.getElementById(c === "routes" ? "routes" : "s" + c)?.scrollIntoView(), 50);
+    if (c !== undefined) {
+      // 字（Web フォント）の読み込みで行の高さが変わるので、読み込みを待ってから飛ぶ
+      const go = () => document.getElementById(c === "routes" ? "routes" : "s" + c)?.scrollIntoView();
+      go();
+      (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => requestAnimationFrame(() => setTimeout(go, 60)));
+    }
     return;
   }
   document.querySelectorAll("nav a").forEach(x => x.dataset.tab === tab ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current"));
