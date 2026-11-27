@@ -91,6 +91,99 @@ h2{font-family:"Zen Old Mincho",serif;font-size:28px;line-height:1.4;margin:8px 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media (max-width:767px){.hd{padding:12px 16px 0}.logo{font-size:26px}nav{margin-left:0}nav a{padding:8px 12px}main,.bar{padding-left:16px;padding-right:16px}.pt{grid-template-columns:1fr}.pt .from{grid-column:1}}
 .foot{border-top:3px double var(--ink);background:var(--paper)}.foot div{max-width:1080px;margin:0 auto;padding:16px 24px 32px;font-size:16px;color:var(--ink2)}.foot p{margin:0 0 8px}
+/* ---- 入口の図（教科書の入口・キャラ対・状況・技） ---- */
+.entries{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:0 0 32px}
+.entry{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;align-items:end;background:var(--ink);color:var(--paper);text-decoration:none;border:1px solid var(--ink);border-radius:12px;padding:14px 20px 18px;animation:rise .4s both;transition:transform .15s,box-shadow .15s}
+.entry:hover{transform:translateY(-2px);box-shadow:5px 5px 0 var(--accent)}
+.entry .eh{grid-column:1/-1;font-weight:900;font-size:20px;letter-spacing:.12em}
+.entry b{font-family:"Zen Old Mincho",serif;font-size:56px;line-height:1;color:#ffd9cf}
+.entry span:last-child{font-size:16px;line-height:1.5;color:#ece6da;padding-bottom:4px}
+.chaps{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.chap{background:var(--card);border:1px solid var(--rule);border-top:6px solid var(--ink);border-radius:10px;padding:14px 18px 16px;display:flex;flex-direction:column;gap:8px;animation:rise .4s both}
+.chh{text-decoration:none;color:var(--ink);display:flex;flex-direction:column}
+.chh .cn{font-size:14px;font-weight:700;letter-spacing:.16em;color:var(--accent)}
+.chh b{font-family:"Zen Old Mincho",serif;font-size:26px;line-height:1.35}
+.chh:hover b{text-decoration:underline;text-underline-offset:4px}
+.chh .cm{font-size:16px;color:var(--ink2)}
+.sbar{display:flex;height:10px;border:1px solid var(--ink);border-radius:5px;overflow:hidden}
+.sbar i{background:currentColor;min-width:3px}
+.slg{font-size:14px;line-height:1.5;color:var(--ink2);margin-top:-4px}
+.chs{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.chs a{display:inline-block;padding:3px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink);text-decoration:none;font-size:16px;line-height:1.5}
+.chs a:hover{border-color:var(--ink);background:var(--paper2);text-decoration:underline}
+.chr{font-weight:700;font-size:16px;margin-top:2px}
+.vsort{margin:0 0 16px}
+.vtiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(152px,1fr));gap:10px}
+.vt{position:relative;background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:12px 14px 12px 20px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:6px;min-height:120px;animation:rise .35s both;transition:transform .12s,box-shadow .12s,border-color .12s}
+.vt::before{content:"";position:absolute;inset:-1px auto -1px -1px;width:7px;background:var(--accent);border-radius:10px 0 0 10px}
+.vt:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink);border-color:var(--ink)}
+.vn{font-family:"Zen Old Mincho",serif;font-size:22px;line-height:1.25;word-break:keep-all;overflow-wrap:anywhere}
+.vsub{font-size:16px;line-height:1.45;color:var(--ink2)}
+.vm{display:block;height:8px;background:var(--paper2);border:1px solid var(--rule);border-radius:4px;overflow:hidden;margin-top:auto}
+.vm i{display:block;height:100%;background:var(--ink)}
+.vc{font-size:16px;font-weight:700}
+.vw{font-size:14px;line-height:1.45;color:var(--ink2)}
+.vstrip{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 16px;padding:10px 0;border-top:1px dashed var(--rule);border-bottom:1px dashed var(--rule)}
+.vstrip a{font-size:16px;line-height:1.5;padding:3px 11px;border:1px solid var(--rule);border-radius:999px;text-decoration:none;color:var(--ink);background:var(--card)}
+.vstrip a:hover{border-color:var(--ink);text-decoration:underline}
+.vstrip a[aria-current]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.vh{font-size:44px;line-height:1.25;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.vh small{font-family:"JetBrains Mono",monospace;font-size:18px;color:#fff;background:var(--accent);padding:2px 12px;border-radius:6px;letter-spacing:.12em}
+.pn{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:24px 0 0;font-weight:700}
+.fv{display:grid;grid-template-columns:minmax(250px,330px) 1fr;gap:24px;align-items:start}
+.smap{display:flex;flex-direction:column;gap:18px}
+.sg h3{font-size:18px;line-height:1.4;margin:0 0 6px}
+.sg h3 small{display:block;font-size:14px;font-weight:400;color:var(--ink2)}
+.sb{display:flex;flex-direction:column;gap:4px}
+.sb a{display:block;padding:8px 12px;border:1px solid var(--rule);border-left:5px solid var(--rule);border-radius:6px;background:var(--card);color:var(--ink);text-decoration:none;font-weight:700;font-size:16px;line-height:1.45}
+.sb a:hover{border-left-color:var(--ink);text-decoration:underline}
+.sb a[aria-current]{background:var(--ink);color:var(--paper);border-color:var(--ink);border-left-color:var(--accent)}
+.fpane{position:sticky;top:var(--hd,170px)}
+.flow{background:var(--card);border:1px solid var(--ink);border-radius:12px;overflow:hidden;animation:rise .3s both}
+.fs{background:var(--ink);color:var(--paper);padding:14px 18px;display:flex;flex-direction:column;gap:4px}
+.fs b{font-family:"Zen Old Mincho",serif;font-size:24px;line-height:1.35}
+.fsl{font-size:14px;font-weight:700;letter-spacing:.14em}
+.fs .fsl{color:#ffd9cf}
+.fw{font-size:16px;line-height:1.5;color:#ece6da}
+.fb{padding:16px 18px;display:flex;flex-direction:column;gap:14px}
+.fl,.fk{display:flex;flex-direction:column;gap:6px}
+.fb .fsl{color:var(--accent)}
+.fc{display:flex;flex-wrap:wrap;align-items:center;gap:6px 4px}
+.fn{background:var(--jp-bg);color:var(--jp);border:1px solid var(--jp);border-radius:6px;padding:4px 10px;font-weight:700;font-size:16px;line-height:1.4}
+.fa{color:var(--ink2);font-weight:900;padding:0 2px}
+.fk ul{list-style:none;margin:0 0 0 10px;padding:0 0 0 20px;border-left:3px solid var(--vs);display:flex;flex-direction:column;gap:8px}
+.fk li{position:relative}
+.fk li::before{content:"";position:absolute;left:-20px;top:16px;width:16px;border-top:3px solid var(--vs)}
+.fk .fn{background:var(--vs-bg);color:var(--vs);border-color:var(--vs)}
+.fct{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+.flows{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;margin-bottom:24px}
+.mvs{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.mv{display:flex;flex-direction:column;gap:6px;padding:12px 16px;border:1px solid var(--ink);border-bottom-width:4px;border-radius:10px;background:var(--card);color:var(--ink);text-decoration:none;transition:transform .1s,border-bottom-width .1s;animation:rise .35s both}
+.mv:hover b{text-decoration:underline}
+.mv:active{transform:translateY(2px);border-bottom-width:2px}
+.mv b{font-size:18px;line-height:1.35}
+mark{background:#ffe08a;color:var(--ink);padding:0 2px;border-radius:3px}
+.mh{font-size:18px;line-height:1.5;margin:0 0 8px}
+@media (max-width:767px){header{position:static}nav{flex-wrap:wrap}.fv{grid-template-columns:1fr}.fpane{position:static}.vh{font-size:34px}.entry b{font-size:44px}.chaps{grid-template-columns:1fr}.flows{grid-template-columns:1fr}}
+/* 書き直した段落（見出し＋箇条書き） */
+.sec .pa{margin:0 0 20px;max-width:44em}
+.sec .pa .lh{margin:0;font-size:18px;line-height:1.6}
+.pa .lh b{font-weight:700}
+.pl{margin:4px 0 0;padding-left:1.4em}
+.pl li{margin:3px 0;line-height:1.7}
+.pl li::marker{color:var(--accent)}
+/* 節の結論：✓ 使える（節の頭）／✕ 使えない（節の終わり） */
+.vd{background:var(--card);border:1px solid var(--rule);border-left:6px solid;border-radius:10px;padding:12px 18px;margin:8px 0 24px;max-width:52em}
+.vd.vu{border-left-color:#1e5d2b}.vd.vx{border-left-color:var(--accent);margin-top:20px}
+.vd h3{font-size:18px;line-height:1.4;margin:0 0 6px}
+.vu h3{color:#1e5d2b}.vx h3{color:var(--accent)}
+.vd ul{margin:0;padding-left:1.2em}
+.vd li{margin:6px 0;line-height:1.6}
+.vu li::marker{color:#1e5d2b}.vx li::marker{color:var(--accent)}
+.vdt{font-weight:700}
+.vdn{margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--ink2)}
+.vv{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:14px;font-weight:700}
+.vv .ok{color:#1e5d2b}.vv .ng{color:var(--accent)}
 
 </style>
 </head>
@@ -100,6 +193,9 @@ h2{font-family:"Zen Old Mincho",serif;font-size:28px;line-height:1.4;margin:8px 
     <h1 class="logo"><small id="subtitle"></small><span id="title"></span></h1>
     <nav aria-label="切り替え">
       <a href="#/book" data-tab="book">教科書</a>
+      <a href="#/vs" data-tab="vs">キャラ対</a>
+      <a href="#/flow" data-tab="flow">状況</a>
+      <a href="#/moves" data-tab="moves">技</a>
       <a href="#/themes" data-tab="themes">テーマ別</a>
       <a href="#/videos" data-tab="videos">動画</a>
       <a href="#/lives" data-tab="lives">配信</a>
@@ -145,6 +241,25 @@ document.getElementById("whos").innerHTML = multi ? `<button data-who="" aria-pr
 if (!multi) document.getElementById("whos").remove();
 if (!D.lives.length) document.querySelector('nav a[data-tab="lives"]').remove();
 if (!D.book.length) document.querySelector('nav a[data-tab="book"]').remove();
+
+// ---- 入口の図：キャラ対（タイル）・状況（流れ図）・技（ボタン）----
+// キャラ対策の章：config の matchupCh、無ければ id が taisaku か、章名に「対策」を含む章
+const VSI = (() => { const k = D.book.findIndex(c => c.id === (M.matchupCh || "taisaku")); return k >= 0 ? k : D.book.findIndex(c => /対策/.test(c.name)); })();
+const VSC = D.book[VSI];
+// 節名「ルーク」「ダルシム：テレポを落とし…」はキャラ。「：」が無くて長い節（「相手は JP の…」）は全般
+const vsName = s => { const k = s.title.indexOf("："); return k >= 0 ? [s.title.slice(0, k), s.title.slice(k + 1)] : [s.title, ""]; };
+const isChar = s => s.title.includes("：") || s.title.length <= 12;
+// ルートを1列に（章・グループ・番号つき）。番号は絞り込みに関係なく固定
+const RT = [];
+D.book.forEach((c, i) => (c.routes || []).forEach(g => g.routes.forEach(r => RT.push({c, i, g, r, k: RT.length}))));
+// 技のボタン：config の moves、無ければルートの手順に2回以上出る語
+const MV = (M.moves && M.moves.length) ? M.moves : (() => {
+  const n = {}; RT.forEach(x => [x.r.route, ...(x.r.options || [])].flat().forEach(s => n[s] = (n[s] || 0) + 1));
+  return Object.entries(n).filter(([, v]) => v >= 2).sort((a, b) => b[1] - a[1]).slice(0, 24).map(([s]) => ({g: "ルートに出る技", n: s, q: [s]}));
+})();
+if (!VSC) document.querySelector('nav a[data-tab="vs"]').remove();
+if (!RT.length) document.querySelector('nav a[data-tab="flow"]').remove();
+if (!MV.length) document.querySelector('nav a[data-tab="moves"]').remove();
 document.getElementById("foot").innerHTML = (M.footer || []).map(h => `<p>${h}</p>`).join("");
 
 // すべてのポイントを1列に
@@ -162,6 +277,8 @@ function ptHTML(p, i, showFrom) {
 }
 // 教科書：出典 {{ID@秒}} を時刻リンクに。{{dc:チャンネルID/メッセージID}} は Discord の投稿へのリンク（D.dc に投稿者・日付）
 function cite(text) {
+  // 続けて並んだ Discord の出典も新しい順に（段落の並びと見た目をそろえる）
+  text = String(text ?? "").replace(/\{\{dc:\d+\/\d+\}\}(?:\s*\{\{dc:\d+\/\d+\}\})+/g, run => run.match(/\{\{dc:\d+\/\d+\}\}/g).sort((a, b) => dcDate(b) - dcDate(a)).join(" "));
   return esc(text).replace(/\{\{([\w-]{11})@(\d+)\}\}/g, (_, id, t) => {
     const s = D.src[id] || {title: id, kind: "v"};
     return `<a class="cite" href="${yt(id, t)}" target="_blank" rel="noopener" title="${esc(s.title)}（${ymd(s.date)}）" aria-label="${esc(s.title)} の ${hms(t)} から（新しいタブで開きます）">${s.kind === "l" ? "配信" : "動画"} ${hms(t)}</a>`;
@@ -170,17 +287,142 @@ function cite(text) {
     return `<a class="cite" href="https://discord.com/channels/${M.dcGuild}/${c}/${m}" target="_blank" rel="noopener" title="${esc(M.dcName || "Discord")} #${esc(s.c || "")}" aria-label="${esc(s.a || "")} さんの ${d} の投稿${s.v ? "（動画あり）" : ""}（Discord・新しいタブで開きます）">${s.v ? "▶ " : ""}${esc(s.a || "投稿")} ${d}</a>`;
   });
 }
-// 節の末尾の「この節のクリップ」：Discord の投稿（動画つき）へのリンクと一言
+// Discord の投稿を出典にする段落は新しい順に並べる（2026-11-27 本人の指示）。動画の段落は今の順のまま前に置く
+// 段落の日付＝出典にしている投稿（{{dc:…}}）のいちばん新しい日付
+const isDc = p => /\{\{dc:/.test(p);
+const dcDate = p => Math.max(0, ...[...p.matchAll(/\{\{dc:\d+\/(\d+)\}\}/g)].map(m => +(((D.dc || {})[m[1]] || {}).d || 0)));
+const newestDc = (list, get) => [...list.filter(x => !isDc(get(x))), ...list.filter(x => isDc(get(x))).sort((a, b) => dcDate(get(b)) - dcDate(get(a)))];
+const ordered = ps => newestDc(ps, x => x[1]);
+// 段落：改行があれば「1行目＝見出し、「- 」で始まる行＝箇条」（build_note.py --rewrites で書き直した段落）。無ければ今までどおり1つの段落
+const paraHTML = (tag, p, fmt = cite) => {
+  const ls = p.split("\n").filter(l => l.trim());
+  if (ls.length < 2) return `<p class="said">${tag}${fmt(p)}</p>`;
+  return `<div class="said pa"><p class="lh">${tag}<b>${fmt(ls[0])}</b></p><ul class="pl">${ls.slice(1).map(l => `<li>${fmt(l.replace(/^-\s*/, ""))}</li>`).join("")}</ul></div>`;
+};
+// 節の末尾の「この節のクリップ」：Discord の投稿（動画つき）へのリンクと一言。新しい順
 const dcd = d => `${+d.slice(0,4)}/${+d.slice(4,6)}/${+d.slice(6,8)}`;
 const clipsHTML = s => {
-  const cs = (s.clips || []).filter(k => (!who || k.ch === who) && (!q || (k.x + k.a).includes(q) || (s.title + s.body.join("")).includes(q)));
+  const cs = (s.clips || []).filter(k => (!who || k.ch === who) && (!q || (k.x + k.a).includes(q) || (s.title + s.body.join("")).includes(q))).sort((a, b) => +(b.d || 0) - +(a.d || 0));
   if (!cs.length) return "";
   return `<details class="clips"><summary>この節のクリップ（${cs.length}）</summary><ul>${cs.map(k => `<li><a href="https://discord.com/channels/${M.dcGuild}/${k.c}/${k.m}" target="_blank" rel="noopener" aria-label="${esc(k.a)} さんの ${dcd(k.d)} の動画つき投稿（Discord・新しいタブで開きます）">▶ ${esc(k.a)} ${dcd(k.d)}</a>${k.x ? `<span>${esc(k.x)}</span>` : ""}</li>`).join("")}</ul></details>`;
 };
+// 話し手ごとの段落の数（多い順）と、その割合の帯。帯の下に名前と数を文字でも出す（色だけで分けない）
+const spk = list => { const n = {}; list.forEach(([w]) => n[w] = (n[w] || 0) + 1); return Object.entries(n).sort((a, b) => b[1] - a[1]); };
+const nameOf = w => (CH[w] || [w])[0];
+const barHTML = pairs => multi && pairs.length ? `<span class="sbar" aria-hidden="true">${pairs.map(([w, n]) => `<i class="${(CH[w] || [])[1] || ""}" style="flex:${n}"></i>`).join("")}</span><span class="slg">${pairs.map(([w, n]) => `${esc(nameOf(w))} ${n}`).join("・")}</span>` : "";
+function entryHTML() {
+  const e = [];
+  if (VSC) e.push(`<a class="entry" href="#/vs"><span class="eh">キャラ対</span><b>${VSC.sections.filter(isChar).length}</b><span>キャラ。タイルを押すと、そのキャラの対策だけを読む</span></a>`);
+  if (RT.length) e.push(`<a class="entry" href="#/flow"><span class="eh">状況</span><b>${RT.length}</b><span>本のルート。「〇〇の後」から流れ図でたどる</span></a>`);
+  if (MV.length) e.push(`<a class="entry" href="#/moves"><span class="eh">技</span><b>${MV.length}</b><span>の技。押すと、その技の話だけを集める</span></a>`);
+  return e.length ? `<div class="entries">${e.join("")}</div>` : "";
+}
 function viewBook() {
   if (!D.book.length) return viewThemes();
   return `<h2>教科書</h2><p class="lead">${esc(M.bookLead || (D.lives.length ? "動画と配信" : "動画") + "のポイントを章にまとめた読み物。リンクを押すとその場面から再生する。")}</p>
-  <div class="themes">${D.book.map((c, i) => `<a class="theme" href="#/ch/${c.id}" style="animation-delay:${i*30}ms"><b>第${i + 1}章 ${esc(c.name)}</b><span>${c.sections.length} 節${c.reviewed === false ? "（下書き）" : ""}</span></a>`).join("")}</div>`;
+  ${entryHTML()}<h3 class="rg">目次</h3>
+  <div class="chaps">${D.book.map((c, i) => {
+    const ps = c.sections.flatMap(s => s.body.map(said)), nr = (c.routes || []).reduce((a, g) => a + g.routes.length, 0);
+    return `<section class="chap" style="animation-delay:${i * 40}ms"><a class="chh" href="#/ch/${c.id}"><span class="cn">第${i + 1}章</span><b>${esc(c.name)}</b>
+      <span class="cm">${c.sections.length} 節${nr ? ` ・ ルート ${nr}` : ""} ・ 段落 ${ps.length}${c.reviewed === false ? "（下書き）" : ""}</span></a>${barHTML(spk(ps))}
+      <ol class="chs">${c.sections.map((s, j) => `<li><a href="#/ch/${c.id}/${j}">${esc(i === VSI ? vsName(s)[0] : s.title)}</a></li>`).join("")}</ol>${nr ? `<a class="chr" href="#/ch/${c.id}/routes">ルート一覧（${nr}）→</a>` : ""}</section>`;
+  }).join("")}</div>`;
+}
+// 節の結論（build_note.py --verdicts）：✓ 使える／✕ 使えない。根拠の日付がすべて直近の調整（meta.patch）より前なら「調整前」
+const srcDate = t => { const m = /\{\{dc:\d+\/(\d+)\}\}/.exec(t); if (m) return +(((D.dc || {})[m[1]] || {}).d || 0); const v = /\{\{([\w-]{11})@\d+\}\}/.exec(t); return v ? +((D.src[v[1]] || {}).date || 0) : 0; };
+const vdItem = x => { const d = Math.max(0, ...(x.src || []).map(srcDate)), old = M.patch && d && d < +M.patch;
+  return `<li><span class="vdt">${esc(x.t)}</span>${old ? ` <span class="tag k-vs">調整前</span>` : ""} ${cite((x.src || []).join(""))}</li>`; };
+// 使える対策は節の頭、使えない対策は節の終わり（段落とクリップのあと）に置く（2026-11-27 本人の指示）
+const vdBox = (cls, mark, name, l, note) => l.length ? `<section class="vd ${cls}" aria-label="${name}"><h3><span aria-hidden="true">${mark}</span> ${name}（${l.length}）</h3><ul>${l.map(vdItem).join("")}</ul>${note ? `<p class="vdn">${note}</p>` : ""}</section>` : "";
+const vdNote = () => `段落から、勧められている行動と、通らない・危ないとされた行動を抜き出したもの。${M.patch ? `「調整前」は根拠がすべて ${+M.patch.slice(0, 4)}年${+M.patch.slice(4, 6)}月${+M.patch.slice(6, 8)}日の調整より前の話で、今は変わっているかもしれない。` : ""}`;
+const useHTML = s => s.verdict ? vdBox("vu", "✓", "使える対策", s.verdict.use, vdNote() + (s.verdict.nouse.length ? `使えない・通らない対策（${s.verdict.nouse.length}）は下にまとめた。` : "")) : "";
+const nouseHTML = s => s.verdict ? vdBox("vx", "✕", "使えない・通らない対策", s.verdict.nouse, s.verdict.use.length ? "" : vdNote()) : "";
+// キャラ対：タイルの一覧と1キャラの画面
+let vsSort = "";
+const parasOf = s => s.body.map(said).filter(([w]) => !who || w === who);
+function viewVs() {
+  const ss = VSC.sections.map((s, j) => ({s, j, ps: parasOf(s), k: (s.clips || []).filter(x => !who || x.ch === who).length}))
+    .filter(x => !q || (x.s.title + x.s.body.join("") + (x.s.clips || []).map(k => k.x).join("")).includes(q));
+  const chars = ss.filter(x => isChar(x.s)), gen = ss.filter(x => !isChar(x.s));
+  const mx = Math.max(1, ...ss.map(x => x.ps.length));
+  const order = vsSort === "n" ? [...chars].sort((a, b) => b.ps.length - a.ps.length) : chars;
+  const tile = (x, n) => { const [nm, sub] = vsName(x.s), sp = spk(x.ps);
+    return `<a class="vt" href="#/vs/${x.j}" style="animation-delay:${Math.min(n, 24) * 18}ms"><span class="vn">${esc(nm)}</span>${sub ? `<span class="vsub">${esc(sub)}</span>` : ""}
+      ${x.s.verdict ? `<span class="vv"><span class="ok">✓ 使える ${x.s.verdict.use.length}</span><span class="ng">✕ 使えない ${x.s.verdict.nouse.length}</span></span>` : ""}
+      <span class="vm" aria-hidden="true"><i style="width:${Math.round(x.ps.length / mx * 100)}%"></i></span><span class="vc">${x.ps.length} 段落${x.k ? ` ・ クリップ ${x.k}` : ""}</span>
+      ${multi && sp.length ? `<span class="vw">${sp.map(([w]) => esc(nameOf(w))).join("・")}</span>` : ""}</a>`; };
+  return `<h2>キャラ対</h2><p class="lead">第${VSI + 1}章「${esc(VSC.name)}」の ${chars.length} キャラ${q ? `（「${esc(q)}」を含むものだけ）` : ""}。押すと、そのキャラの対策だけを読む。棒の長さは段落の数。</p>
+  <div class="chips vsort" role="group" aria-label="並べ方"><button data-vsort="" aria-pressed="${vsSort !== "n"}">章の順</button><button data-vsort="n" aria-pressed="${vsSort === "n"}">話の多い順</button></div>
+  <div class="vtiles">${order.map(tile).join("") || `<p class="empty">当てはまるキャラは無い。</p>`}</div>${gen.length ? `<h3 class="rg">全般</h3><div class="vtiles">${gen.map(tile).join("")}</div>` : ""}`;
+}
+function viewVsOne(j) {
+  const s = VSC.sections[+j]; if (!s) return `<p class="empty">見つからない。</p>`;
+  const [nm, sub] = vsName(s), chars = VSC.sections.map((x, k) => [x, k]).filter(([x]) => isChar(x));
+  const pos = chars.findIndex(([, k]) => k === +j), prev = pos > 0 ? chars[pos - 1] : null, next = pos >= 0 ? chars[pos + 1] : null;
+  const ps = ordered(s.body.map(said)), both = new Set(ps.map(x => x[0])).size > 1, shown = ps.filter(x => !who || x[0] === who);
+  return `<a class="back" href="#/vs">← キャラ対の一覧</a>
+  <nav class="vstrip" aria-label="ほかのキャラ">${chars.map(([x, k]) => `<a href="#/vs/${k}"${k === +j ? ' aria-current="page"' : ""}>${esc(vsName(x)[0])}</a>`).join("")}</nav>
+  <h2 class="vh"><small>${isChar(s) ? "VS" : "全般"}</small>${esc(nm)}</h2>${sub ? `<p class="lead">${esc(sub)}</p>` : ""}
+  ${useHTML(s)}<h3 class="rg">段落（${shown.length}）</h3>
+  <section class="sec">${shown.map(([w, p]) => paraHTML(both || w !== DEF ? chTag(w) : "", p)).join("") || `<p class="empty">この話し手の段落は無い。</p>`}${clipsHTML(s)}</section>${nouseHTML(s)}
+  <p class="pn">${prev ? `<a href="#/vs/${prev[1]}">← ${esc(vsName(prev[0])[0])}</a>` : "<span></span>"}<a href="#/ch/${VSC.id}/${j}">教科書のこの節で読む</a>${next ? `<a href="#/vs/${next[1]}">${esc(vsName(next[0])[0])} →</a>` : "<span></span>"}</p>`;
+}
+// 状況：ルートを「状況 → まずやること → そこからの択」の流れ図にする
+const chainHTML = a => `<span class="fc">${a.map(x => `<span class="fn">${esc(x)}</span>`).join(`<span class="fa" aria-hidden="true">→</span>`)}</span>`;
+function flowHTML(x) {
+  const r = x.r;
+  return `<div class="flow"><div class="fs"><span class="fsl">状況</span><b>${esc(r.name)}</b>${r.when ? `<span class="fw">${esc(r.when)}</span>` : ""}</div>
+  <div class="fb"><div class="fl"><span class="fsl">まず</span>${chainHTML(r.route)}</div>
+  ${(r.options || []).length ? `<div class="fk"><span class="fsl">そこから択</span><ul>${r.options.map(o => `<li>${chainHTML(o)}</li>`).join("")}</ul></div>` : ""}
+  ${r.note ? `<p class="rnote">${esc(r.note)}</p>` : ""}<div class="fct">${chTag(x.g.ch)}${cite((r.cites || []).join(" "))}</div></div></div>`;
+}
+function viewFlow(sel) {
+  const rs = RT.filter(x => (!who || chOf(x.g.ch) === who) && (!q || JSON.stringify(x.r).includes(q)));
+  const groups = [];
+  rs.forEach(x => { const key = x.i + "|" + x.g.title; let g = groups.find(y => y.key === key); if (!g) groups.push(g = {key, x, list: []}); g.list.push(x); });
+  const cur = rs.includes(RT[+sel]) ? RT[+sel] : rs[0];
+  if (!cur) return `<h2>状況</h2><p class="empty">当てはまるルートは無い。</p>`;
+  return `<h2>状況</h2><p class="lead">「状況」を押すと、そこからの流れ（まずやること → そこからの択）が出る。${rs.length} 本。</p>
+  <div class="fv"><div class="smap">${groups.map(g => `<div class="sg"><h3>${esc(g.x.g.title)}<small>第${g.x.i + 1}章 ${esc(g.x.c.name)}</small></h3>
+    <div class="sb">${g.list.map(x => `<a href="#/flow/${x.k}"${x === cur ? ' aria-current="true"' : ""}>${esc(x.r.name)}</a>`).join("")}</div></div>`).join("")}</div>
+  <div class="fpane" id="fpane">${flowHTML(cur)}<p class="pn"><span></span><a href="#/ch/${cur.c.id}/routes">第${cur.i + 1}章のルート一覧で見る</a><span></span></p></div></div>`;
+}
+// 技：ボタンの一覧と、1つの技の話を集めた画面
+const hasT = (s, mv) => mv.q.some(t => s.includes(t));
+const noCite = t => t.replace(/\{\{[^}]+\}\}/g, "");
+function moveHits(mv) {
+  const paras = [];
+  D.book.forEach((c, i) => c.sections.forEach((s, j) => s.body.forEach(p => {
+    const [w, t] = said(p);
+    if ((!who || w === who) && hasT(noCite(t), mv) && (!q || t.includes(q))) paras.push({c, i, s, j, w, t});
+  })));
+  const routes = RT.filter(x => (!who || chOf(x.g.ch) === who) && hasT([x.r.name, x.r.when, ...x.r.route, ...(x.r.options || []).flat(), x.r.note].join(" "), mv) && (!q || JSON.stringify(x.r).includes(q)));
+  const pts = ALL.filter(p => hit(p) && hasT(p.head + " " + p.body, mv));
+  return {paras, routes, pts, n: paras.length + routes.length + pts.length};
+}
+function viewMoves() {
+  const gs = []; MV.forEach((m, k) => { let g = gs.find(x => x.g === (m.g || "")); if (!g) gs.push(g = {g: m.g || "", l: []}); g.l.push([m, k]); });
+  const hs = MV.map(moveHits), mx = Math.max(1, ...hs.map(h => h.n));
+  return `<h2>技</h2><p class="lead">技を押すと、その技が出てくる教科書の段落・ルート・動画のポイントだけを集める。数字は当たった件数${q ? `（「${esc(q)}」も含むもの）` : ""}。</p>
+  ${gs.map(g => `${g.g ? `<h3 class="rg">${esc(g.g)}</h3>` : ""}<div class="mvs">${g.l.map(([m, k]) => `<a class="mv" href="#/move/${k}"><b>${esc(m.n)}</b>
+    <span class="vm" aria-hidden="true"><i style="width:${Math.round(hs[k].n / mx * 100)}%"></i></span><span class="vc">${hs[k].n} 件</span></a>`).join("")}</div>`).join("")}`;
+}
+function hl(text, mv) {
+  const re = new RegExp("(" + mv.q.map(t => esc(t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")", "g");
+  return text.split(/(\{\{[^}]+\}\})/).map(part => /^\{\{/.test(part) ? cite(part) : esc(part).replace(re, "<mark>$1</mark>")).join("");
+}
+function viewMove(k) {
+  const mv = MV[+k]; if (!mv) return `<p class="empty">見つからない。</p>`;
+  const h = moveHits(mv), bySec = [];
+  h.paras.forEach(x => { let g = bySec.find(y => y.s === x.s); if (!g) bySec.push(g = {s: x.s, c: x.c, i: x.i, j: x.j, l: []}); g.l.push(x); });
+  return `<a class="back" href="#/moves">← 技の一覧</a>
+  <nav class="vstrip" aria-label="ほかの技">${MV.map((m, n) => `<a href="#/move/${n}"${n === +k ? ' aria-current="page"' : ""}>${esc(m.n)}</a>`).join("")}</nav>
+  <h2>${esc(mv.n)}</h2><p class="lead">教科書 ${h.paras.length} 段落（${bySec.length} 節）・ルート ${h.routes.length} 本・動画のポイント ${h.pts.length} か所。探した語：${mv.q.map(esc).join("・")}</p>
+  ${h.routes.length ? `<h3 class="rg">ルート</h3><div class="flows">${h.routes.map(flowHTML).join("")}</div>` : ""}
+  ${bySec.length ? `<h3 class="rg">教科書</h3>${bySec.map(g => `<section class="sec"><h4 class="mh"><a href="#/ch/${g.c.id}/${g.j}">${g.i + 1}-${g.j + 1} ${esc(g.s.title)}</a></h4>
+    ${newestDc(g.l, x => x.t).map(x => paraHTML(multi ? chTag(x.w) : "", x.t, s => hl(s, mv))).join("")}</section>`).join("")}` : ""}
+  ${h.pts.length ? `<h3 class="rg">動画のポイント</h3>${h.pts.map((p, n) => ptHTML(p, n, true)).join("")}` : ""}
+  ${h.n ? "" : `<p class="empty">当てはまるものは無い。</p>`}`;
 }
 function viewChapter(id) {
   const i = D.book.findIndex(c => c.id === id), c = D.book[i];
@@ -189,12 +431,12 @@ function viewChapter(id) {
   const toc = c.sections.map((s, j) => `<li><a href="#/ch/${id}/${j}">${i + 1}-${j + 1} ${esc(s.title)}</a>${others(s).map(w => " " + chTag(w)).join("")}</li>`).join("");
   const secs = c.sections.filter(s => !q || (s.title + s.body.join("") + (s.clips || []).map(k => k.x).join("")).includes(q)).map(s => {
     const j = c.sections.indexOf(s);
-    const ps = s.body.map(said);
+    const ps = ordered(s.body.map(said));
     const both = new Set(ps.map(x => x[0])).size > 1;
     const shown = ps.filter(x => !who || x[0] === who);
     const clips = clipsHTML(s);
     if (!shown.length && !clips) return "";
-    return `<section class="sec" id="s${j}"><h3>${i + 1}-${j + 1} ${esc(s.title)}</h3>${shown.map(([w, p]) => `<p class="said">${both || w !== DEF ? chTag(w) : ""}${cite(p)}</p>`).join("")}${clips}</section>`;
+    return `<section class="sec" id="s${j}"><h3>${i + 1}-${j + 1} ${esc(s.title)}</h3>${useHTML(s)}${shown.map(([w, p]) => paraHTML(both || w !== DEF ? chTag(w) : "", p)).join("")}${clips}${nouseHTML(s)}</section>`;
   }).join("");
   const steps = a => a.map(x => `<span class="step">${esc(x)}</span>`).join(`<span class="arr" aria-hidden="true">＞</span>`);
   const routes = (c.routes || []).filter(g => !who || chOf(g.ch) === who).map(g => {
@@ -248,9 +490,10 @@ function viewOne(kind, id) {
   ${ps.map((p, i) => ptHTML(p, i, false)).join("") || `<p class="empty">当てはまるポイントは無い。</p>`}`;
 }
 function render() {
+  document.documentElement.style.setProperty("--hd", document.querySelector("header").offsetHeight + 16 + "px");
   const h = location.hash.replace(/^#\//, "") || (D.book.length ? "book" : "themes");
   const [a, b, c] = h.split("/").map(decodeURIComponent);
-  const tab = {theme: "themes", video: "videos", live: "lives", ch: "book"}[a] || a;
+  const tab = {theme: "themes", video: "videos", live: "lives", ch: "book", move: "moves"}[a] || a;
   document.querySelectorAll("nav a").forEach(x => x.dataset.tab === tab ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current"));
   if (a === "ch") {
     document.getElementById("app").innerHTML = viewChapter(b);
@@ -263,9 +506,16 @@ function render() {
     return;
   }
   document.getElementById("app").innerHTML =
+    a === "vs" && VSC ? (b !== undefined ? viewVsOne(b) : viewVs()) : a === "flow" && RT.length ? viewFlow(b) :
+    a === "moves" && MV.length ? viewMoves() : a === "move" && MV.length ? viewMove(b) :
     a === "theme" ? viewTheme(b) : a === "videos" ? viewVideos() : a === "lives" ? viewLives() :
     a === "video" ? viewOne("v", b) : a === "live" ? viewOne("l", b) : a === "themes" ? viewThemes() : viewBook();
+  // 狭い画面では、状況を押したら流れ図のところまで下げる
+  if (a === "flow" && b !== undefined && matchMedia("(max-width:767px)").matches) document.getElementById("fpane")?.scrollIntoView();
 }
+document.getElementById("app").addEventListener("click", e => {
+  const b = e.target.closest("[data-vsort]"); if (b) { vsSort = b.dataset.vsort; render(); }
+});
 document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim(); render(); });
 document.querySelectorAll("[data-side]").forEach(b => b.addEventListener("click", () => {
   side = b.dataset.side; document.querySelectorAll("[data-side]").forEach(x => x.setAttribute("aria-pressed", x === b)); render();
