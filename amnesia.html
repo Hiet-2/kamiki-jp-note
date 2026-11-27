@@ -43,7 +43,7 @@ h2{font-family:"Zen Old Mincho",serif;font-size:28px;line-height:1.4;margin:8px 
 .card .s{font-size:16px;color:var(--ink2)}
 .meta{font-size:16px;color:var(--ink2);display:flex;gap:4px 12px;flex-wrap:wrap}
 .tag{display:inline-block;font-size:14px;font-weight:700;padding:1px 10px;border-radius:999px;border:1px solid currentColor}
-.k-jp{color:var(--jp);background:var(--jp-bg)} .k-c0{color:#3d5a1e;background:#e6efd9} .k-c1{color:#5b2a86;background:#eee3f7} .k-c2{color:#0b5d5e;background:#dcefef} .k-c3{color:#8a4b00;background:#f7e6cf} .k-c4{color:#28408a;background:#e2e8f7}
+.k-jp{color:var(--jp);background:var(--jp-bg)} .k-c0{color:#3d5a1e;background:#e6efd9} .k-c1{color:#5b2a86;background:#eee3f7} .k-c2{color:#0b5d5e;background:#dcefef} .k-c3{color:#8a4b00;background:#f7e6cf} .k-c4{color:#28408a;background:#e2e8f7} .k-c5{color:#6b2a4e;background:#f6e2ec}
 .clips{margin:14px 0 4px;border:1px solid var(--rule);border-radius:10px;padding:8px 14px}
 .clips summary{cursor:pointer;font-weight:700}
 .clips ul{margin:8px 0 2px;padding-left:0;list-style:none}
@@ -217,7 +217,7 @@ const D = JSON.parse(document.getElementById("data").textContent);
 const M = D.meta;
 const THEMES = M.themes;
 const SIDE = Object.fromEntries(M.sides.map(([k, n], i) => [k, [n, i ? "k-vs" : "k-jp"]]));
-const CH = Object.fromEntries(D.channels.map((c, i) => [c.id, [c.name, "k-c" + (i % 5)]]));
+const CH = Object.fromEntries(D.channels.map((c, i) => [c.id, [c.name, "k-c" + (i % 6)]]));
 const DEF = M.defaultCh;
 const multi = D.channels.length > 1;
 let side = "", who = "", q = "";
