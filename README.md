@@ -3,6 +3,7 @@
 YouTube「神木C」の動画と配信、YouTube「りゅうせい」「なんでねー」「レリン」の動画の内容と、Discord「JPの集い」の攻略の投稿を、ファンが要約してまとめた非公式のまとめです。
 
 - 公開ページ：https://hiet-2.github.io/sf6-jp-note/ （2026年11月27日から公開。11月26日〜27日は非公開でした。同じ日に題名を「JP ノート」から「JP 攻略ノート」、リポジトリ名を kamiki-jp-note から sf6-jp-note に変えた）
+- 話題ごとのページ（ノートから、その言葉を含む段落・ルート・動画のポイントだけを集めたもの）：SA2 https://hiet-2.github.io/sf6-jp-note/sa2.html ・アムネジア https://hiet-2.github.io/sf6-jp-note/amnesia.html ・モダン・クラシック https://hiet-2.github.io/sf6-jp-note/modern.html
 - もとにした動画
   - 神木C（https://www.youtube.com/@%E7%A5%9E%E6%9C%A8C ）の動画と配信
   - りゅうせい（https://www.youtube.com/channel/UCPr2Pyu41o1O7NXl4eDaLPw ）の動画
