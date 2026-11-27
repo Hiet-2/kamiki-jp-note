@@ -1,8 +1,8 @@
-# JP ノート（非公式・非公開）
+# JP ノート（非公式）
 
 YouTube「神木C」の動画と配信、YouTube「りゅうせい」「なんでねー」「レリン」の動画の内容と、Discord「JPの集い」の攻略の投稿を、ファンが要約してまとめた非公式のまとめです。
 
-- このリポジトリは非公開です（2026年11月26日から。GitHub Pages は止めています）。index.html は手元で http サーバーを立てて開きます
+- 公開ページ：https://hiet-2.github.io/kamiki-jp-note/ （2026年11月27日から公開。11月26日〜27日は非公開でした）
 - もとにした動画
   - 神木C（https://www.youtube.com/@%E7%A5%9E%E6%9C%A8C ）の動画と配信
   - りゅうせい（https://www.youtube.com/channel/UCPr2Pyu41o1O7NXl4eDaLPw ）の動画
