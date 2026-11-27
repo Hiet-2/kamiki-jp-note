@@ -186,6 +186,7 @@ mark{background:#ffe08a;color:var(--ink);padding:0 2px;border-radius:3px}
 .vv .ok{color:#1e5d2b}.vv .ng{color:var(--accent)}
 
 </style>
+<style id="topic-links-css">.topics{padding-top:0}.topics .tl{font-size:14px;font-weight:700;color:var(--ink2)}.topics a{font-size:15px;padding:4px 12px;border:1px solid var(--rule);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}.topics a[aria-current=page]{background:var(--ink);color:var(--paper);border-color:var(--ink)}</style>
 </head>
 <body>
 <header>
@@ -206,6 +207,7 @@ mark{background:#ffe08a;color:var(--ink);padding:0 2px;border-radius:3px}
     <div class="chips" role="group" aria-label="誰向けの話か" id="sides"></div>
     <div class="chips" role="group" aria-label="誰の話か" id="whos"></div>
   </div>
+  <div class="bar topics" id="topic-links"><span class="tl">話題ごとのページ</span><div class="chips"><a href="index.html" aria-current="page">全体</a><a href="sa2.html">SA2</a><a href="amnesia.html">アムネジア</a><a href="modern.html">モダン・クラシック</a></div></div>
 </header>
 <main id="app"></main>
 <footer class="foot"><div id="foot"></div></footer>
